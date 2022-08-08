@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView resultat;
     private Button btn;
     private final String url = "https://api.openweathermap.org/data/2.5/";
-    private final String api = "037031b02562b706d2dc1f5bd5a28736";
+    private final String api = "YOUR API KEY";
     private final String unit = "metric";
     private final String langue = "fr";
     //private String output = "";
