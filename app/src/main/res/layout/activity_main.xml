@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:text="Weather Update"
+        android:background="@android:color/holo_purple"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVille"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Entrez le nom de la ville"
+            android:autofillHints=""
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPays"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Entrez le pays (facultatif)"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:id="@+id/etBtn"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:text="Consulter"
+            app:backgroundTint="@null"
+           />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toResultat"
+                android:textColor="@color/white"/>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
